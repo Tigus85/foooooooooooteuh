@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Partie Header  */
+
+#logoFristLeague{
+  width: 100%;
+}
+
+header{
+  display: flex;
+  
+}
+
+#majorHeader{
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin-left: 1.5rem;
+}
+
+#navAndTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #e90052;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.logoTeam{
+  width: 4rem;
+  margin: 1rem;
+}
+
+.logoTeam:hover{
+  
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transform:scale(2);
+
+  cursor: pointer;
+}
+
+h1{
+  color: #3f1052;
+  text-align: center;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+
+
+
+/* menu deroulant pays */
+
+#language{
+  width: 15%;
+  margin: 0 auto;
+  background-color: white;
+  color: #3f1052;
+
+  top: 0px;
+}
+
+#language ul{
+  list-style-type: none;
+}
+
+
+#language a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
+}
+
+#language a:hover{
+  color: #3f1052;
+  border-bottom: 2px solid #3f1052;
+}
+
+.sous{
+  display: none;
+  box-shadow: 0px 1px 2px #CCC;
+  background-color: white;
+  position: absolute;
+  width: 8%;
+  z-index: 1000;
+}
+#language > ul li:hover .sous{
+  display: block;
+}
+
+
+/* card */
+
+.mainIndex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.teamCard{
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  
+  background-image: linear-gradient(0deg, #37003c, #e90052)
+ 
+}
+
+
+
+.badge{
+  width: 20%;
+}
+
+.description{
+  height: 200px;
+  margin: 1rem 0;
+  border: 1px solid black;
+  overflow: auto;
+  background-color: white;
+}
+
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e90052; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+  
+}
+/* fin scroll bars */
+
+button{
+  font-size: 1rem;
+  margin: 2rem 3rem;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+
+ 
+
+  padding: 3% 4%;
+  border-radius: 2rem;
+  transition: .15s;
+
+  cursor: pointer;
+  background-color: #3f1052;
+  box-shadow: 0px 5px 0px #53156b;
+}
+
+button:hover{
+  box-shadow: none;
+  background-color: #3f1052;
+
+  transform: translateY(5px);
+}
+
+button a {
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+}
+
+
+h3{
+  margin: 0;
+}
+.mainJersey{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jersey{
+  display: flex;
+}
+
+.focusJersey{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+h4{
+  margin: 0 0 1rem 0;
+}
+
+.imgJersey{
+  width: 50%;
+}
+
+.imgStadium{
+  width: 100%;
+}
+
+
+
+
+/* css pour detail.php */
+
+.mainDetail{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bannerSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-image: linear-gradient(90deg, #37003c, #e90052);
+  padding-bottom: 10px;
+}
+
+.bannerSection img{
+  width: 100%;
+}
+
+.h2Detail{
+  font-size: 3rem;
+  margin: 0;
+  color: white;
+}
+
+.link{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+ 
+  background-image: linear-gradient(90deg, #37003c, #e90052);
+}
+
+.link a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/* partie description stade */
+
+#stade{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+#stade div, #stade img{
+  width: 50%;
+  margin: 10px;
+}
+
+#stade img{
+  border: solid 1px black;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px black, 0 3px 6px black;
+}
+
+
+.nameStade{
+  font-size: 1.5rem;
+  padding: 10px;
+  
+}
+
+.nameStade div{
+  padding: 10px;
+  border: #37003c solid 4px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.nameStade p{
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/* partie description equipe */
+
+#description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#description h4{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+#description p{
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 20px;
+}
+
+
+/* partie galerie */
+
+#galerie{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+#galerie div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+#galerie div img{
+  width: 45%;
+  margin: 1rem;
+  border: solid 1px black;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px black, 0 3px 6px black;
+}
+
+/* partie footer liens */
+
+#liens{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  
+}
+
+#liens h4{
+  align-self: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+#liens div{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.3rem;
+}
+
+#liens div a{
+  display: flex;
+  text-decoration: none;
+  color: black;
+
+
+
+  border: solid 5px #53156b;
+  border-radius: 5px;
+}
+
+#liens div a i{
+  color: white;
+  background-color: #53156b;
+  padding: 5px 10px 5px  5px ;
+}
+
+#liens div a div{
+  align-self: center;
+  margin: 5px;
+}
